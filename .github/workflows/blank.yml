@@ -20,5 +20,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "Comment on issue #${{ github.event.issue.number }}"
-          echo "${{ github.event }}"
+          echo "Event: ${{ github.event }}"
